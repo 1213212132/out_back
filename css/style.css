@@ -125,7 +125,7 @@
     position: absolute;
     bottom: 100px;
     left: 50%;
-    z-index: 999;
+    z-index: 1;
     transform: translate(-50%, 0);
 
     display: flex;
@@ -134,6 +134,7 @@
 
 .MainVisual .dots li span {
     font-size: 0;
+
 }
 
 .MainVisual .dots li {
@@ -182,7 +183,7 @@
 }
 
 .MainItm .itm .txt {
-    margin: 0 -100px 0 0;
+
     z-index: 999;
 }
 
@@ -200,7 +201,8 @@
 }
 
 .MainItm .swiper-slide-active .itm .txt {
-    display: none;
+    width: 0;
+    overflow: hidden;
 }
 
 .MainItm .itm figure {
@@ -210,4 +212,19 @@
 .MainItm .swiper-slide-active .itm figure {
     width: 300px;
     transition: 1s;
+
+}
+
+@keyframes fg {
+    0% {
+        width: 300px;
+    }
+
+    50% {
+        width: 500px;
+    }
+
+    100% {
+        width: 300px;
+    }
 }
