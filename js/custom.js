@@ -28,6 +28,11 @@ $(function () {
     });
 
 
+
+
+
+
+
     $('.MainVisual .arrows .left').on('click', function () {
         MainSlide.slidePrev();
     });
@@ -44,6 +49,12 @@ $(function () {
 
 
 
+    const itm = new Swiper('.itm_slide', {
+        // Optional parameters
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 30,
 
+    })
 
 })
