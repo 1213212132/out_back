@@ -80,17 +80,27 @@ $(function () {
         $(this).toggleClass('on');
         $('.Gnb').toggleClass('on');
     });
+    $('.Gnb ul>li>a').on('click', function (e) {
+        if ($('.Gnb').hasClass('on')) {
 
-    $('.Gnb>ul>li>a').on('click', function (e) {
-        e.preventDefault();
-        $(this).next().stop().slideDown();
-        $(this).parent().siblings().find('.snb').stop().slideUp();
+            //서버메뉴가 없으면 바로 클릭되게 하기
+            if ($(this).next().size() != 0) {
+                e.preventDefault();
+            }
+            $(this).next().stop().slideToggle();
+            $(this).parent().siblings().find('.snb').stop().slideUp();
+        }
     });
 
     $(window).on('resize', function () {
-        $('.Gnb .snb').removeAttr('style')
-    })
+        $('.Gnb').removeClass('on')
+    });
 
+    $('.Gnb').on('wheel', function (e) {
+        if ($('.Gnb').hasClass('on')) {
+            e.preventDefault();
+        }
+    })
 
 
 

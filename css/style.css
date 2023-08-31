@@ -695,6 +695,11 @@ responsive 768
 
     * {
         outline: 1px solid --tomato;
+
+    }
+
+    .Wrap {
+        overflow-x: hidden;
     }
 
     .Header {
@@ -1150,6 +1155,10 @@ responsive 768
 
         display: flex;
         justify-content: space-between;
+
+        /*R*/
+        z-index: 99;
+        top: 65%;
     }
 
     .MainItm .arrows i {
@@ -1158,6 +1167,7 @@ responsive 768
         color: #fff;
         font-size: 20px;
         border-radius: 5px;
+
     }
 
     .MainBenefit {
@@ -1244,6 +1254,9 @@ responsive 768
         height: 150px;
         transform: rotate(-30deg);
         background: url(../images/btn_main_visual_next_on.png) no-repeat right top;
+
+        /*r*/
+        display: none;
     }
 
     .MainReword .inner {
@@ -1251,12 +1264,17 @@ responsive 768
         grid-template-columns: 1fr 3fr;
         align-items: center;
         gap: 50px;
+
+
     }
 
     .MainReword .title {
         position: relative;
         border: 4px solid #222;
         min-height: 300px;
+
+        /*r*/
+        border: 0;
     }
 
     .MainReword .title .case {
@@ -1266,6 +1284,10 @@ responsive 768
         left: -4px;
         right: 50px;
         background: #fff;
+
+
+        /*r*/
+        top: -170px;
     }
 
     .MainReword h2 {
@@ -1285,6 +1307,9 @@ responsive 768
 
     .MainReword .title p {
         margin: 0 0 10px 0;
+
+        /*r*/
+        display: none;
     }
 
     .MainReword .title .btn {
@@ -1293,12 +1318,22 @@ responsive 768
         background: #222;
         color: #fff;
         font-size: 15px;
+
+        /*r*/
+        position: absolute;
+        bottom: -140px;
     }
 
     .MainReword .list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
+
+        /*r*/
+
+        position: absolute;
+        left: 2%;
+        right: 1%;
     }
 
     /* mc : #be161e sc : #907354*/
