@@ -922,6 +922,7 @@ responsive 768
         overflow: hidden;
         height: calc(100vh - 100px);
         /* r */
+
         height: 500px;
     }
 
@@ -933,10 +934,11 @@ responsive 768
     .MainVisual .main_slide .itm01 .slide-img {
         background: url(../images/main01.jpg) no-repeat center top/cover;
 
+
     }
 
     .MainVisual .main_slide .itm02 .slide-img {
-        background: url(../images/main02.jpg) no-repeat center top/cover;
+        background: url(../images/main02.jpg) no-repeat left top/cover;
 
 
     }
@@ -1083,13 +1085,28 @@ responsive 768
         position: static;
         opacity: 1;
         width: auto;
+        line-height: 1.1;
     }
 
     .MainItm .detail .txt h3 {
-        font-size: 60px;
+        font-size: 40px;
         font-weight: 700;
-        margin: 0 0 50px 0;
+        margin: 0 0 20px 0;
     }
+
+    .MainItm .detail .txt strong {
+        font-size: 20px;
+        font-weight: 500;
+
+    }
+
+    .MainItm .detail .txt p {
+        font-size: 16px;
+        font-weight: 300;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
 
     .MainItm .detail.swiper-slide-next .txt {
         animation: op 4s .5s both;
@@ -1110,6 +1127,8 @@ responsive 768
         transform: scale(1);
         transition: 0.5s;
         animation: sc 4s 1s both;
+
+
     }
 
 
